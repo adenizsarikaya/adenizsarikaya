@@ -1,8 +1,9 @@
-.sidebar li i.fa-envelope {
-  margin-right: 6px;  /* space between icon and text */
+.sidebar li a[href^="mailto:"] {
+  pointer-events: none;  /* disables click */
+  cursor: default;
+  color: inherit;        /* keeps default text color */
 }
 
-.sidebar li {
-  word-wrap: break-word;
-  max-width: 200px; /* adjust this number if needed */
+.sidebar li a[href^="mailto:"] i.fa-envelope {
+  margin-right: 6px;
 }
