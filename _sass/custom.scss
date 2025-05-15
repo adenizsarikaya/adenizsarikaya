@@ -1,9 +1,13 @@
-.sidebar li a[href^="mailto:"] {
-  pointer-events: none;  /* disables click */
-  cursor: default;
-  color: inherit;        /* keeps default text color */
-}
-
-.sidebar li a[href^="mailto:"] i.fa-envelope {
-  margin-right: 6px;
+.author__urls li.email a {
+  pointer-events: none;  /* disable clicking */
+  cursor: default;       /* normal cursor */
+  color: inherit;        /* same color as text */
+  text-decoration: none; /* no underline */
+  white-space: nowrap;   /* prevent line breaks inside the email */
+  max-width: 100%;       /* don't overflow container */
+  overflow: hidden;      /* hide overflow */
+  text-overflow: ellipsis; /* add ... if too long */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em; /* space between icon and text */
 }
